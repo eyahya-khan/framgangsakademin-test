@@ -53,6 +53,10 @@ header {
   width: 100%;
 }
 
+.sectionInfo:hover {
+  transform: rotate(5deg);
+}
+
 .sectionInfo-name {
   text-align: center;
   background-color: #25282e;
@@ -64,6 +68,7 @@ header {
 .sectionInfo-name h2 {
   margin-bottom: 15px;
 }
+
 /*footer*/
 footer {
   height: 100px;
@@ -78,14 +83,14 @@ footer {
 @media (min-width: 768px) {
   .headerInfo {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 42% 58%;
     grid-template-rows: 1fr;
-    grid-column-gap: 40px;
+
     padding: 35px;
   }
 
   .headerVideo video {
-    padding-top: 30%;
+    height: 95%;
   }
   /*section*/
   section#displaySectionInfo {
@@ -99,7 +104,7 @@ footer {
 
   .sectionInfo {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     margin-bottom: 25px;
   }
@@ -110,10 +115,12 @@ footer {
   }
   .sectionInfo-name {
     margin-top: 0px;
+    padding: 0;
   }
   .sectionInfo-name h2 {
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 23px;
+    padding-top: 25px;
   }
 }
 
@@ -132,6 +139,40 @@ footer {
     margin-left: 10%;
   }
   .sectionInfo-name h2 {
-    font-size: 13px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .headerInfo {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .headerVideo video {
+    height: 100%;
+  }
+  .headerTitle-info {
+    font-size: 24px;
+    line-height: initial;
+  }
+  .sectionInfo-name h2 {
+    font-size: 29px;
+  }
+  .sectionInfo-name p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 2559px) {
+  .headerTitle-info {
+    font-size: 46px;
+  }
+  .sectionInfo-name h2 {
+    font-size: 50px;
+    margin-top: 40px;
+  }
+  .sectionInfo-name p {
+    font-size: 35px;
+    padding-top: 28px;
   }
 }
